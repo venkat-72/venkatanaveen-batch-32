@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <h1> profile</h1>
+        <style>
+            h1{
+                text-align: center;
+            }
+            img {
+               
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img  src="..\assets\VENKATA NAVEEN PHOTO.jpg.">
+        <!-- <span id="vnProfile"></span> -->
+       
+       </body>
+    <script>
+        var vnProfile ={ 
+            fname:"Venkata Naveen",
+            lname:"pasumarthi",
+            education:"masters in computer science",
+            height:5.6,
+            gender:"male",
+            eyes:"blk",
+            city:"wichita",
+            state:"kansas",
+            country:"united states",
+            hobbies:["cricket","carrom","shuttle","Ps5","badminton"], 
+            printHobbies: function (){console.log(this.hobbies)} ,
+            //add:function(){console.log(this.hobbies.push("hockey"))} 
+        }
+        function add(){
+           vnProfile.hobbies.push("Football");
+        }
+        add();
+
+        function delet(hoby){
+            var i =  vnProfile.hobbies.indexOf(hoby);
+            vnProfile.hobbies.splice(i,1);
+        }
+        delet('Ps5');
+
+
+       
+        vnProfile.printHobbies();
+        //console.log(vnProfile.hobbies[0].sportype[2]);
+        
+
+        // function abc(){
+        //     for (const attr in vnProfile){
+        //     document.getElementById("vnProfile").append(vnProfile['${attr}']);
+        //     const name = "Arjun";
+        //     console.log('${name}');
+        //     }
+        // }
+        // abc();
+
+
+    </script>
+       
+        
+    
+</html>
+
