@@ -1,74 +1,52 @@
 <!doctype html>
 <html>
-    <head>
-        <h1> profile</h1>
-        <style>
-            h1{
-                text-align: center;
-            }
-            img {
-               
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                
-            }
-            
-        </style>
-    </head>
-    <body>
-        <img  src="..\assets\VENKATA NAVEEN PHOTO.jpg.">
-        <!-- <span id="vnProfile"></span> -->
-       
-       </body>
-    <script>
-        var vnProfile ={ 
-            fname:"Venkata Naveen",
-            lname:"pasumarthi",
-            education:"masters in computer science",
-            height:5.6,
-            gender:"male",
-            eyes:"blk",
-            city:"wichita",
-            state:"kansas",
-            country:"united states",
-            hobbies:["cricket","carrom","shuttle","Ps5","badminton"], 
-            printHobbies: function (){console.log(this.hobbies)} ,
-            //add:function(){console.log(this.hobbies.push("hockey"))} 
+
+<head>
+    <h1> Hobbies</h1>
+    <style>
+        h1 {
+            text-align: center;
         }
-        function add(){
-           vnProfile.hobbies.push("Football");
-        }
-        add();
+    </style>
+</head>
 
-        function delet(hoby){
-            var i =  vnProfile.hobbies.indexOf(hoby);
-            vnProfile.hobbies.splice(i,1);
-        }
-        delet('Ps5');
+<body>
 
+</body>
+<script>
+    let hobbies = ["cricket", "carrom", "shuttle", "Ps5", "badminton"]
 
-       
-        vnProfile.printHobbies();
-        //console.log(vnProfile.hobbies[0].sportype[2]);
-        
+    console.log("before adding hobbies : " , hobbies);
+    function add() {
+        hobbies.push("Football");
+    }
+    add();
+    console.log("after adding hobbies : " , hobbies);
 
-        // function abc(){
-        //     for (const attr in vnProfile){
-        //     document.getElementById("vnProfile").append(vnProfile['${attr}']);
-        //     const name = "Arjun";
-        //     console.log('${name}');
-        //     }
-        // }
-        // abc();
+    function deleteHobby(hobby) {
+        var i = hobbies.indexOf(hobby);
+        hobbies.splice(i, 1);
+    }
+    deleteHobby('Ps5');
 
 
-    </script>
-       
-        
-    
+    function printHobbies() {
+        console.log("after deleting adding hobbies : " , hobbies);
+    }
+    printHobbies();
+
+
+
+
+
+</script>
+
+
+
 </html>
 
+<!--
+create a object about your profile with minimum 10 properties/fields
+hobbbies should be an array with an object type as sport type and display last hobbie and avatar or image in html or page with height 250 and width 250 and image should be in circle
+own photo in assests
+-->
