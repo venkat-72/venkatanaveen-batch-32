@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<h1>Profile info</h1>
+
+</html>
+
+<body>
+    <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname"><br>
+        <label for="date">Date Of Birth</label>
+        <input type="date" id="date"><br>
+        <label for="email">Email</label>
+        <input type="text" id="email"><br>
+        <label for="phno">Phone Number</label>
+        <input type="text" id="phno"><br>
+        <label for="adress">Adress</label>
+        <input type="text" id="adress"><br>
+        <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode"><br>
+
+        <button onclick="display()">Submit</button>
+
+
+
+        <p id="firstName"></p>
+        <p id="lastname"></p>
+        <p id="dob"></p>
+        <p id="gmail"></p>
+        <p id="phone"></p>
+        <p id="adrs"></p>
+        <p id="zip pin"></p>
+    </div>
+</body>
+<script>
+    function display() {
+        // var c=document.getElementById("fname").value;
+        document.getElementById("firstName").innerHTML = document.getElementById("fname").value;
+        document.getElementById("lastname").innerHTML = document.getElementById("lname").value;
+        document.getElementById("dob").innerHTML = document.getElementById("date").value;
+        document.getElementById("gmail").innerHTML = document.getElementById("email").value;
+        document.getElementById("phone").innerHTML = document.getElementById("phno").value;
+        // document.getElementById("firstName").innerHTML = document.getElementById("fname").value;
+        document.getElementById("adrs").innerHTML = document.getElementById("adress").value;
+        document.getElementById("zip pin").innerHTML = document.getElementById("zipcode").value;
+    }
+
+</script>
