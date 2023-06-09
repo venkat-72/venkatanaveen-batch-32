@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <script>
+        var val={
+            num : [1,20,10,30,45,5]
+        }
+        val.__proto__.secondSmallVal=function () {
+            var val1=this.num.sort();
+            return val1[1];
+            
+        }
+        console.log(val.secondSmallVal());
+
+    </script>
+    
+</body>
+</html>
