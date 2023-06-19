@@ -1,0 +1,26 @@
+.header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-size-adjust:40px;
+  }
+  
+  .menu-item {
+    margin-right: 20px;
+  }
+
+  
+  .search-box {
+    
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    color: blue;
+  }
+  
