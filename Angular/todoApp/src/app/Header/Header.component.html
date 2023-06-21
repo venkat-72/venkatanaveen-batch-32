@@ -1,8 +1,25 @@
-<div class="header">
+<!-- <div class="header">
   <div class="menu">
     <div class="menu-item">Profile</div>
     <div class="menu-item">Contact</div>
     <div class="menu-item" (click) = "changeloginstatus()" >{{loginvalue ? "login" : "logout"}}</div>
     <input type="text" class="search-box" placeholder="Search...">
   </div>
-</div>
+</div> -->
+<div>
+  <ul class="header">
+     <li [routerLink]="['/profile']" routerLinkActive="router-link-active" >
+        profile
+     </li>
+     <li [routerLink]="['/login']" routerLinkActive="router-link-active" >
+        Login
+     </li>
+     <li>
+        Logout
+     </li>
+     <li [routerLink]="['/signup']" routerLinkActive="router-link-active" >
+        Signup
+     </li>
+  </ul>
+  
+  </div>

@@ -1,4 +1,4 @@
-.header {
+/* .header {
     background-color: blue;
     color: white;
     padding: 20px;
@@ -23,4 +23,9 @@
     width: 200px;
     color: blue;
   }
-  
+   */
+
+   .header {
+    display: flex;
+    justify-content: space-between;
+}
